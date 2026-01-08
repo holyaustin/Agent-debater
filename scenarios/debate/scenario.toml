@@ -1,0 +1,23 @@
+[green_agent]
+endpoint = "http://127.0.0.1:9009"
+#cmd = "python3 scenarios/debate/debate_judge.py --host 127.0.0.1 --port 9009"
+# cmd = "uv run python scenarios/debate/debate_judge.py --host 127.0.0.1 --port 9009"
+#cmd = "/home/augustineonuora/Dapps-Empty/2025/Dec2025/agentbeat-tutorial/.venv/bin/python /home/augustineonuora/Dapps-Empty/2025/Dec2025/agentbeat-tutorial/scenarios/debate/debate_judge.py --host 127.0.0.1 --port 9009"
+
+[[participants]]
+role = "pro_debater"
+endpoint = "http://127.0.0.1:9019"
+#cmd = "uv run python3 scenarios/debate/debater.py --host 127.0.0.1 --port 9019"
+# cmd = "uv run python scenarios/debate/debater.py --host 127.0.0.1 --port 9019"
+#cmd = "/home/augustineonuora/Dapps-Empty/2025/Dec2025/agentbeat-tutorial/.venv/bin/python /home/augustineonuora/Dapps-Empty/2025/Dec2025/agentbeat-tutorial/scenarios/debate/debater.py --host 127.0.0.1 --port 9019 --role pro"
+
+[[participants]]
+role = "con_debater"
+endpoint = "http://127.0.0.1:9018"
+#cmd = "python3 scenarios/debate/debater.py --host 127.0.0.1 --port 9018"
+# cmd = "uv run python scenarios/debate/debater.py --host 127.0.0.1 --port 9018"
+#cmd = "/home/augustineonuora/Dapps-Empty/2025/Dec2025/agentbeat-tutorial/.venv/bin/python /home/augustineonuora/Dapps-Empty/2025/Dec2025/agentbeat-tutorial/scenarios/debate/debater.py --host 127.0.0.1 --port 9018 --role con"
+
+[config]
+topic = "Should artificial intelligence be regulated?"
+num_rounds = 2
